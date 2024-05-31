@@ -1,0 +1,8 @@
+server:
+  port: 8087
+
+spring:
+  application:
+    name: venue-service
+  config:
+    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:9999/}
